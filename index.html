@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.ie.css" />
+    <![endif]-->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="prompt">
+          <ul>
+            <li><div id="geolocate"><img src="img/geolocate.png" style="float:left;">Use your current location</div></li>
+            <li>
+              <!-- Geocoder -->
+                <div data-control="geocode" id="search">
+                  <form class="geocode">
+                    <input type="submit" />
+                    <input placeholder="Search for an address" type="text" autocomplete="off">
+                    <div id="geocode-error"></div>
+                  </form>
+                </div>
+              <!-- /////////-->
+            </li>
+          </ul>
+      </div>
+
+      <div id="map"></div>
+    </div>
+
+    <!-- Leaflet -->
+    <script src="js/locations_geojson.js" type="text/javascript"></script>
+    <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+
+    <!-- Geocoder -->
+    <script src="js/reqwest.js"></script>
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Form -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Map Functions -->
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
